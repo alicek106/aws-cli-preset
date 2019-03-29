@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 COPY sources.list /etc/apt/sources.list
 RUN apt update && \
-  apt install python python-pip curl groff vim -y && \
+  apt install python python-pip curl groff vim git -y && \
   apt clean autoclean && \
   apt autoremove --yes && \
   rm -rf /var/lib/{apt,dpkg,cache,log} && \
