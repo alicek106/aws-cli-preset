@@ -1,5 +1,5 @@
 # aws-cli-preset
-AWS CLI and aws-ami-authenticator is installed.
+AWS CLI is installed (python 3 and pip 3).
 ```
-$ docker pull alicek106/aws-cli-preset:0.0
+$ docker pull alicek106/aws-cli-preset:latest
 ```
