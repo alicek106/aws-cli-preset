@@ -3,9 +3,7 @@ COPY sources.list /etc/apt/sources.list
 RUN apt update && \
   apt install python python-pip curl groff vim git -y && \
   apt clean autoclean && \
-  apt autoremove --yes && \
-  rm -rf /var/lib/{apt,dpkg,cache,log} && \
-  rm -rf /var/www/html/index.html
+  apt autoremove --yes
 
 RUN curl -o kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/kubectl && \
   chmod +x kubectl && \
